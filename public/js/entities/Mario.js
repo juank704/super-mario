@@ -51,7 +51,7 @@ function createMarioFactory(sprite, audio) {
     return function createMario() {
         const mario = new Entity();
         mario.audio = audio;
-        mario.size.set(14, 16);
+        mario.size.set(22, 47);
 
         mario.addTrait(new Physics());
         mario.addTrait(new Solid());

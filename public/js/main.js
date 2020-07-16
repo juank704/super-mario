@@ -69,7 +69,7 @@ async function main(canvas) {
         waitScreen.comp.layers.push(playerProgressLayer);
         sceneRunner.addScene(waitScreen);
 
-        level.comp.layers.push(createCollisionLayer(level));
+        //level.comp.layers.push(createCollisionLayer(level));
         level.comp.layers.push(dashboardLayer);
         sceneRunner.addScene(level);
 
@@ -97,8 +97,8 @@ async function main(canvas) {
 const canvas = document.getElementById('screen');
 
 const start = () => {
-    window.removeEventListener('click', start);
+    //window.removeEventListener('click', start);
     main(canvas);
 };
 
-window.addEventListener('click', start);
+window.addEventListener('load', start);

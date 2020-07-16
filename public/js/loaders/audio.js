@@ -10,6 +10,7 @@ export function loadAudioBoard(name, audioContext) {
             return Promise.all(Object.keys(fx).map(name => {
                 return loadAudio(fx[name].url)
                     .then(buffer => {
+                        return;
                         audioBoard.addAudio(name, buffer);
                     });
             }))
