@@ -1,0 +1,50 @@
+{
+    "imageURL": "/img/characters.gif",
+
+    "frames": [
+        {
+            "name": "idle",
+            "rect": [712, 1, 24, 49]
+        },
+        {
+            "name": "run-3",
+            "rect": [712, 78, 24, 49]
+        },
+        {
+            "name": "run-2",
+            "rect": [712, 156, 24, 49]
+        },
+        {
+            "name": "run-1",
+            "rect": [712, 233, 24, 49]
+        },
+        {
+            "name": "break",
+            "rect": [712, 156, 24, 49]
+        },
+        {
+            "name": "jump",
+            "rect": [712, 311, 24, 49]
+        },
+        {
+            "name": "upblow",
+            "rect": [712, 698, 24, 49]
+        },
+        {
+            "name": "downblow",
+            "rect": [712, 622, 24, 49]
+        }
+    ],
+
+    "animations": [
+        {
+            "name": "run",
+            "frameLen": 6,
+            "frames": [
+                "run-1",
+                "run-2",
+                "run-3"
+            ]
+        }
+    ]
+}
