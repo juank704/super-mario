@@ -1,7 +1,7 @@
 import {Sides} from '../Entity.js';
 import Trait from '../Trait.js';
 
-export default class Jump extends Trait {
+export default class Downblow extends Trait {
     constructor() {
         super();
 
@@ -12,9 +12,10 @@ export default class Jump extends Trait {
         this.gracePeriod = 0.1;
         this.speedBoost = 0.3;
         this.velocity = 200;
+        this.attack = 0;
     }
 
-    get rise() {
+    get falling() {
         return this.ready < 0;
     }
 
@@ -53,4 +54,6 @@ export default class Jump extends Trait {
 
         this.ready--;
     }
+
+
 }
