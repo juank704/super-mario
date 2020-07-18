@@ -1,15 +1,37 @@
 {
-  "name": "super-mario",
+  "name": "cvjuan",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "start": "serve ./public",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --config webpack.dev.js --port 9000 --progress --colors -d --env=dev --open",
+    "build": "webpack --config webpack.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/runtime": "^7.10.5",
+    "lodash": "^4.17.19",
     "serve": "^11.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "csv-loader": "^3.0.3",
+    "file-loader": "^6.0.0",
+    "gh-pages": "^3.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "npm-install-webpack-plugin": "^4.0.5",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.0.9",
+    "xml-loader": "^1.2.1"
   }
 }

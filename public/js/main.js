@@ -69,7 +69,7 @@ async function main(canvas) {
         waitScreen.comp.layers.push(playerProgressLayer);
         sceneRunner.addScene(waitScreen);
 
-        //level.comp.layers.push(createCollisionLayer(level));
+        level.comp.layers.push(createCollisionLayer(level));
         level.comp.layers.push(dashboardLayer);
         sceneRunner.addScene(level);
 

@@ -2,7 +2,6 @@ import Keyboard from './KeyboardState.js';
 import InputRouter from './InputRouter.js';
 import Jump from './traits/Jump.js';
 import Go from './traits/Go.js';
-import Downblow from './traits/Downblow.js';
 
 export function setupKeyboard(window) {
     const input = new Keyboard();
@@ -32,6 +31,10 @@ export function setupKeyboard(window) {
 
     input.addMapping('KeyS', keyState => {
             router.route(entity => entity.downblow(keyState));
+    });
+
+    input.addMapping('KeyW', keyState => {
+        router.route(entity => entity.upblow(keyState));
     });
 
     return router;

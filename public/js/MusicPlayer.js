@@ -13,7 +13,7 @@ export default class MusicPlayer {
     playTrack(name) {
         this.pauseAll();
         const audio = this.tracks.get(name);
-        audio.play();
+        //audio.play
         return audio;
     }
 

@@ -3,10 +3,10 @@ import SpriteSheet from '../SpriteSheet.js';
 import {createAnim} from '../anim.js';
 
 export function loadSpriteSheet(name) {
-    return loadJSON(`/sprites/${name}.json`)
+    return loadJSON(`${BASE_PATH}sprites/${name}.json`)
     .then(sheetSpec => Promise.all([
         sheetSpec,
-        loadImage(sheetSpec.imageURL),
+        loadImage(`${BASE_PATH + sheetSpec.imageURL}`),
     ]))
     .then(([sheetSpec, image]) => {
         const sprites = new SpriteSheet(
