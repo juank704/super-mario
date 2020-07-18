@@ -1,13 +1,13 @@
 {
     "fx": {
         "coin": {
-            "url": "/super-mario/public/audio/coin.ogg"
+            "url": "/audio/coin.ogg"
         },
         "jump": {
-            "url": "/super-mario/public/audio/jump.ogg"
+            "url": "/audio/jump.ogg"
         },
         "stomp": {
-            "url": "/super-mario/public/audio/stomp.ogg"
+            "url": "/audio/stomp.ogg"
         }
     }
 }
